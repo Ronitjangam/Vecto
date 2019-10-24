@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3{
+    font-weight:900px!important;
+}
+.btn{
+    background-color: black!important;
+    border-radius: 0px!important;
+    border:none!important;
+    color:wheat!important;
+}
+
+.btn:hover{
+    background:linear-gradient(45deg,rgb(4, 205, 231),rgb(4, 61, 219))!important;
+    color: wheat!important;
+    border:none!important;
+}
+
+.btn:before{
+    content:'';
+    position: relative;
+    background-color: cornflowerblue;
+    top:0;
+    left: 0;
+    width: 0%;
+    z-index:-1;
+    transition: 0.5s;
+}
+.btn:before:hover{
+    width: 100%;
+}
+/*Home*/
+.illustration{
+    animation: float 2s ease-out infinite!important;
+
+}
+@keyframes float {
+    50% {
+       transform: translate(0, 20px);
+    }
+  }
+/*Navbar */
+.navbar-brand{
+    font-weight: 900;
+    font-size:36px!important;
+}
+.nav-link{
+    color: black!important;
+
+}
+.contact-btn{
+    color: teal!important;
+}
+/*call to Action*/
+.cta{
+    background: linear-gradient(45deg,rgb(25, 185, 224),navy);
+    color: wheat!important;
+}
+
+/*services*/
+
+.services h3{
+    font-weight: 900;
+    font-size:2rem;
+}
+.services h3::after{
+    content: '';
+    position: relative;
+    top:300px;
+    height: 5px;
+    width: 230px;
+    background-color: turquoise;
+    
+    
+}
+.services i{
+    color:turquoise;
+}
+
+
+/*portfolio*/
+.portfolio h3{
+    font-size: 36px;
+    font-weight: 900;
+}
+.dark{
+    background-color: rgb(0, 0, 32)!important;
+    color:turquoise!important;
+}
+.dark i{
+    color: turquoise!important;
+}
+
+.portfolio img{
+    height:300px;
+    object-fit:cover;
+}
+
+
+/*footer*/
+.footer{
+    background-color: rgb(1, 1, 37);
+    color: turquoise;
+}
+.footer .nav-link{
+    color: turquoise!important;
+}
+.footer .nav-link:hover{
+    color: white!important;
+}
+
+/*responsive*/
+@media (max-width:700px){
+    .dark{
+        height:300px!important;
+    }
+}
